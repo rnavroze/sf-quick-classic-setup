@@ -4,7 +4,7 @@ chrome.action.onClicked.addListener(tab => {
 
     if (!matches) {
         console.log('a');
-        chrome.notifications.create('SF_INVALID_URL', {
+        chrome.notifications.create('', {
             type: 'basic',
             iconUrl: 'icon.png',
             title: 'Not a Salesforce tab',
