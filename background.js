@@ -3,7 +3,6 @@ chrome.action.onClicked.addListener(tab => {
     let matches = tab.url?.match(pattern);
 
     if (!matches) {
-        console.log('a');
         chrome.notifications.create('', {
             type: 'basic',
             iconUrl: 'icon.png',
