@@ -1,5 +1,5 @@
 chrome.action.onClicked.addListener(tab => {
-    let pattern = /https:\/\/([\w-]+)\.lightning.force.com/;
+    let pattern = /https:\/\/([\w.-]+)\.lightning.force.com/;
     let matches = tab.url?.match(pattern);
 
     if (!matches) {
